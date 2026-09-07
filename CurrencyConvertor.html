@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Convertor App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="currency-box">
+      <h2>Currency Convertor</h2>
+      <div class="first-group">
+        <label for="from">Enter Amount</label><br />
+        <input
+          type="number"
+          min="0"
+          step="0.01"
+          placeholder="100"
+          class="from"
+          id="from"
+          value="100"
+        />
+      </div>
+      <div class="second-row">
+        <div class="left-side">
+          <div class="label-row">
+            <label for="option" class="label-left">From</label>
+          </div>
+          <select name="country" id="option"></select>
+        </div>
+        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+        <div class="right-side">
+          <div class="label-row">
+            <label for="options" class="label-right">To</label>
+          </div>
+          <select name="target-currency" id="options"></select>
+        </div>
+      </div>
+      <div class="third-row">
+        <p class="answer-para"></p>
+      </div>
+      <button class="convert-btn">Convert</button>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
